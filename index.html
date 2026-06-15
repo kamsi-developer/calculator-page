@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    *{
+        margin: 0;
+         padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body{
+      background: #020202;
+    }
+    h2{
+        text-align: center;
+             
+    }
+    .calculator-container{
+     display: grid;
+     place-content: center;
+     min-height: 100vh;
+   }
+   .calculator-body{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    background: rgb(12, 6, 1);
+    gap: 15px;
+    ;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+   }
+   .calculator-body> button{
+    padding: 10px 5px;
+    background: transparent;
+      border: none;
+      font-size: 1.4rem;
+      font-weight: 500;
+      border-radius: 15px;
+      box-sizing: border-box;
+   }
+   .operator{
+    display: grid;
+    background: #020200;
+    box-sizing: border-box;
+    /* border-radius: 50%; */
+   }
+   #input-display{
+    width: 100%;
+    height: 20vh;
+    outline: none;
+    border: none;
+    background: #f5f2f2;
+   }
+  
+</style>
+
+</head>
+<body>
+   <!-- main container -->
+        <div class="main-container">
+        <div class="calculator-container">
+          <div class="input-show">
+            <input type="text" value="00" id="input-display" disabled>
+          </div> 
+          <div class="calculator-body">
+        <button class="operator" style="display: grid; background:rgb(248, 243, 243); border-radius: 50%; width:50px; height: 50px;">c</button>
+        <button class="operator"  style="display: grid; background:rgb(240, 236, 236); border-radius: 50%;  width:50px; height: 50px;">%</button>
+        <button class="operator"  style="display: grid; background:rgb(239, 240, 236); border-radius: 50%; width:50px; height: 50px;">x</button>
+        <button class="operator"  style="display: grid; background:rgb(206, 207, 204); border-radius: 50%; width:50px; height: 50px;">/</button>
+        <button class="number"   style="display: grid; background:rgb(233, 238, 234); border-radius: 50%; width:50px; height: 50px;">7</button>
+        <button class="number"   style="display: grid; background:rgba(248, 252, 248, 0.767); border-radius: 50%; width:50px; height: 50px;">8</button>
+        <button class="number"   style="display: grid; background:rgb(222, 236, 219); border-radius: 50%; width:50px; height: 50px;">9</button>   
+        <button class="operator"   style="display: grid; background:rgb(245, 242, 242);border-radius: 50%; width: 50px; height: 50px;">x</button> 
+        <button class="number"   style="display: grid; background:rgb(243, 242, 242); border-radius: 50%;  width:50px; height: 50px;">4</button> 
+        <button class="number"  style="display: grid; background:rgb(240, 239, 239); border-radius: 50%; width:50px; height: 50px;">5</button> 
+        <button class="number"  style="display: grid; background:rgb(243, 245, 243); border-radius: 50%; width:50px; height: 50px;">6</button> 
+        <button class="operator" style="display: grid; background:rgb(204, 206, 204); border-radius: 50%; width:50px; height: 50px;">-</button> 
+        <button class="number" style="display: grid; background:rgb(186, 192, 188); border-radius: 50%; width:50px; height: 50px;">1</button> 
+        <button class="number" style="display: grid; background:rgb(232, 235, 232); border-radius: 50%; width:50px; height: 50px;">2</button> 
+        <button class="number" style="display: grid; background:rgb(231, 228, 228); border-radius: 50%; width:50px; height: 50px;">3</button> 
+        <button class="operator" style="display: grid; background:rgb(243, 239, 239); border-radius: 50%;width:50px; height: 50px;">+</button>
+        <button class="fn-rotate" style="display: grid; background:rgb(250, 250, 250); border-radius: 50%;width:50px; height: 50px;">A/C</button> 
+        <button class="number" style="display: grid; background:rgb(231, 233, 231); border-radius: 50%;width:50px; height: 50px;">0</button>
+        <button class="operator"  style="display: grid; background:rgb(218, 219, 219); border-radius: 50%;width:50px; height: 50px;">.</button> 
+        <button class="number"  style="display: grid; background:#2dc210a4; border-radius: 50%;width: 50px;height: 50px; "> =</button> 
+          </div>
+          </div>
+        </div>
+    
+      </body>
+</html>
